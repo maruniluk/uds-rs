@@ -1,0 +1,35 @@
+[package]
+name = "uds-rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["Jakub Jíra <jakub.jira@protonmail.com>"]
+license-file = "LICENCE"
+description = "A asynchronous library implementing UDS protocol used for automotive diagnostic, standardized by ISO 14229-1:2013."
+homepage = ""
+repository = ""
+readme = "README.md"
+keywords = ["async", "uds", "iso-14229-1"]
+categories = ["network-programming", "os::linux-apis", "asynchronous"]
+
+[badges]
+maintenance = { status = "actively-developed"}
+
+[dev-dependencies]
+env_logger = "0.10.0"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+futures-util = "0.3.25"
+futures-timer = "3.0.2"
+futures = "0.3"
+rand = "0.8.5"
+bitflags = "2.4.1"
+embedded-can = "0.4.1"
+libc = "0.2"
+nix = "0.26"
+thiserror = "1.0"
+mio = { version = "0.8", features = ["os-ext"] }
+num_enum = "0.7.2"
+log = "0.4.20"
+tokio-socketcan-isotp = "0.1.0"
+
